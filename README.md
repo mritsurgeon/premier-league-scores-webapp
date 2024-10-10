@@ -8,20 +8,21 @@ Follow these steps to set up the application:
 
 1. Install the required packages:
    sudo yum install -y python3 git
+   sudo yum install pip
 
-2. Clone the repository:
+3. Clone the repository:
    git clone https://github.com/mritsurgeon/premier-league-scores-webapp.git
 
-3. Navigate to the project directory:
+4. Navigate to the project directory:
    cd premier-league-scores-webapp
 
-4. Install Python dependencies:
+5. Install Python dependencies:
    pip3 install -r requirements.txt
 
-5. Run the application:
+6. Run the application:
    python3 app.py
 
-6. Access the application:
+7. Access the application:
    - Create a route to your VM in OpenShift
    - Access the application at http://<vm-ip>:5000
 
