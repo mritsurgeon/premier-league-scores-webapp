@@ -7,8 +7,8 @@ A web application for displaying Premier League scores, designed to run on OpenS
 Follow these steps to set up the application:
 
 1. Install the required packages:
-   sudo yum install -y python3 git
-   sudo yum install pip
+   - sudo yum install -y python3 git
+   - sudo yum install pip
 
 3. Clone the repository:
    git clone https://github.com/mritsurgeon/premier-league-scores-webapp.git
