@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League Scores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        h1 {
+            color: #2196f3;
+        }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Premier League Latest Scores</h1>
+    <table>
+        <tr>
+            <th>Home Team</th>
+            <th>Score</th>
+            <th>Away Team</th>
+        </tr>
+        {% for match in scores %}
+        <tr>
+            <td>{{ match.home_team }}</td>
+            <td>{{ match.home_score }} - {{ match.away_score }}</td>
+            <td>{{ match.away_team }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
